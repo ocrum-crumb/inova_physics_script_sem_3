@@ -1,0 +1,124 @@
+\chapter{Statik 2}
+
+Dieses Kapitel baut auf den folgenden Abschnitten im Skript des 2. Semesters \cite{schnidrig_physik_2026}:
+
+\begin{minipage}[t]{.38\textwidth}
+    \begin{itemize}
+        \item Kraft
+        \begin{itemize}
+            \item Die resultierende Kraft
+        \end{itemize}
+        \item Moment
+        \begin{itemize}
+            \item Das Kräftepaar
+            \item Schwerpunkt
+        \end{itemize}
+    \end{itemize}
+\end{minipage}
+\hspace{.1\textwidth}
+\begin{minipage}[t]{.45\textwidth}
+    \begin{itemize}
+        \item Gleichgewicht eines Systems
+        \begin{itemize}
+            \item Zentrales Kräftesystem
+            \item Parallele Kräfte
+            \item Allgemeines Kräftesystem
+        \end{itemize}
+        \item Lagerung und Freimachen
+        \begin{itemize}
+            \item Das Freimachen
+            \item Lagerungsarten
+        \end{itemize}
+    \end{itemize}
+\end{minipage}
+
+\begin{infobox}
+    In der Statik - als Teilgebiet der Mechanik - wird von ruhenden und unverformbaren
+    (starren) Körpern ausgegangen.
+\end{infobox}
+
+Ziel der Statik ist die Annahme der Lasten an einem
+Bauteil, die Bestimmung von Lagerreaktionen und Schnittgrössen. Die Einteilung der Mechanik 
+und der Statik ist in Abbildung \ref{fig:übersichtMechanikStatik} gezeigt.
+
+\begin{figure}[H]    
+    \centering          %     left botm right top
+    \includegraphics[clip, trim=0cm 0cm 0cm 0cm,width=.8\textwidth]{übersichtMechanikStatik.png} %.6 stands for 0.6 x textwidth
+    \caption{Einteilung Mechanik und Statik}
+    \label{fig:übersichtMechanikStatik}
+\end{figure}
+
+\section{Gleichgewicht für das ebene Kräftesystem}
+
+Ein Bauteil ist dann im Gleichgewicht, wenn sich alle an ihm angreifenden Kräfte und
+Momente gegenseitig aufheben. Für das freigemachte Bauteil heisst das, dass die
+resultierende Kraft und das resultierende Moment verschwinden \cite{bartsch_mechanik_2022}.
+
+\begin{infobox}
+    Ein Körper befindet sich im Gleichgewicht, wenn die Summe aller angreifenden Kräfte und
+    Momente gleich Null ist.
+\end{infobox}
+
+\begin{minipage}[t]{.35\textwidth}
+    \begin{equbox}
+        \begin{align}
+            \sum F_x &= 0 \\
+            \sum F_y &= 0 \\
+            \sum M &= 0
+        \end{align}
+    \end{equbox}
+\end{minipage}
+\hspace{.1\textwidth}
+\begin{minipage}[t]{.55\textwidth}
+    \begin{figure}[H]    
+        \centering          %     left botm right top
+        \includegraphics[clip, trim=0cm 0cm 0cm 0cm,width=.8\textwidth]{gleichgewicht_eines_systems.png} %.6 stands for 0.6 x textwidth
+        \label{fig:gleichgewicht}
+    \end{figure}
+\end{minipage}
+
+\begin{bspbox}
+    Ein Generator mit Eigengewicht $G = 2000 N$ läuft mit einem Drehmoment von $M = 500 Nm$ im
+    Uhrzeigersinn. Zusätzlich wirkt eine horizontale Kraft $F = 500 N$. Gesucht sind die Lagereaktionen in
+    den Lagern $A$ und $B$.
+
+    \begin{figure}[H]    
+        \centering          %     left botm right top
+        \includegraphics[clip, trim=0cm 0cm 0cm 0cm,width=.8\textwidth]{bsp_gleichgewicht.png} %.6 stands for 0.6 x textwidth
+        \label{fig:bspgleichgewicht}
+    \end{figure}
+
+    Beim Aufstellen der 3 Gleichgewichtsbedingungen sind immer verschiedene Wege möglich. Mit einer
+    Momentenbedingung bezüglich eines günstigen Pols kann man bereits eine Unbekannte bestimmen.
+    Der Pol muss dabei nicht innerhalb des Bauteils sein. Hier wird der Punkt $C$ gewählt, durch welchen
+    die beiden Kräfte $A_y$ und $B$ gehen.
+
+    Die Wirkungslinie der Kraft $B$ ist durch die Verbindung der Punkte $B$ und $C$ gegeben (Pendelstütze).
+    Der Winkel ergibt sich aus der Geometrie wie folgt:
+
+    \begin{equation*}
+        \tan^{-1}(\frac{70mm}{140mm}) = 26.57^{\circ}
+    \end{equation*}
+
+    \begin{align*}
+        \sum M_C = 
+    \end{align*}
+
+\end{bspbox}
+
+Das gezeigte Beispiel ist ein allgemeines Kräftesystem. 
+Für die Spezialfälle fallen gegebenenfalls Gleichungen weg:
+
+\begin{itemize}
+    \item Zentrales Kräftesystem
+    \begin{itemize}
+        \item $\sum M = 0$ kann nicht aufgestellt werden
+    \end{itemize}
+    \item Parallele Kräftepaar
+    \begin{itemize}
+        \item $\sum F$ in eine Richtung wird nicht aufgestellt
+    \end{itemize}
+\end{itemize}
+
+Ausserdem kann anstelle von $\sum F_x$ oder $\sum F_y$ eine weitere Momentengleichung $\sum M_{II}$ an 
+einem anderen Punkt eingeführt werden.
