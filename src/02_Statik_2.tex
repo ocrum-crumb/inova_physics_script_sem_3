@@ -101,8 +101,32 @@ resultierende Kraft und das resultierende Moment verschwinden \cite{bartsch_mech
     \end{equation*}
 
     \begin{align*}
-        \sum M_C = 
+        \sum M_C = F \cdot 0.27m + A_x \cdot 0.41m - G \cdot 0.14m - M = 0
     \end{align*}
+    \begin{align*}
+        \rightarrow A_x &= \frac{G \cdot 0.14m + M - F \cdot 0.27m}{0.41m} \\
+        &= \frac{2000N \cdot 0.14m + 500Nm - 500N \cdot 0.27m}{0.41m} = 1573N
+    \end{align*}
+
+    \begin{align*}
+        \sum F_x = F + A_x - B \cdot \cos (26.57^{\circ}) = 0
+    \end{align*}
+    \begin{equation*}
+        \rightarrow B = \frac{F + A_x}{\cos (26.57^{\circ})} = \frac{500N + 1573N}{\cos (26.57^{\circ})} = 2318N
+    \end{equation*}
+
+    \begin{align*}
+        \sum F_y = A_y - G + B \cdot \sin (26.57^{\circ}) = 0
+    \end{align*}
+    \begin{equation*}
+        \rightarrow A_y = G - B \cdot \sin (26.57^{\circ}) = 2000N - 2318N \cdot \sin (26.57^{\circ}) = 963N
+    \end{equation*}
+
+    Die für die Dimensionierung des Lagers $A$ (Bolzen) massgebende Kraft ergibt sich mit
+
+    \begin{equation*}
+        A = \sqrt{A_x^2 + A_y^2} = \sqrt{(1573N)^2 + (963N)^2} = 1844N
+    \end{equation*}
 
 \end{bspbox}
 
