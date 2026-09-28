@@ -138,7 +138,7 @@ Für die Spezialfälle fallen gegebenenfalls Gleichungen weg:
     \begin{itemize}
         \item $\sum M = 0$ kann nicht aufgestellt werden
     \end{itemize}
-    \item Parallele Kräftepaar
+    \item Parallele Kräfte
     \begin{itemize}
         \item $\sum F$ in eine Richtung wird nicht aufgestellt
     \end{itemize}
@@ -146,3 +146,58 @@ Für die Spezialfälle fallen gegebenenfalls Gleichungen weg:
 
 Ausserdem kann anstelle von $\sum F_x$ oder $\sum F_y$ eine weitere Momentengleichung $\sum M_{II}$ an 
 einem anderen Punkt eingeführt werden.
+
+\subsection{Die statisch bestimmte Lagerung}
+
+Mit den drei Gleichgewichtsbedingungen können die Lagerreaktionen für beliebige, statisch
+bestimmt gelagerte, ebene Bauteile berechnet werden.
+Daraus kann man die statisch bestimmte Lagerung wie folgt definieren:
+
+\begin{infobox}
+    Die Lagerung eines Körpers ist statisch bestimmt, wenn man aus den verfügbaren
+    Gleichgewichtsbedingungen die unbekannten Auflagerreaktionen berechnen kann \cite{bartsch_mechanik_2022}.
+\end{infobox}
+
+Es gibt allerdings auch Lagerungen, die eine Berechnung nur aus den Gleichgewichts-
+bedingungen nicht erlauben, da nicht genügend Gleichungen zur Verfügung stehen. Als
+Beispiel seien die 3 Arten von Aufhängungen einer Masse mit Seilen betrachtet. Für den
+Befestigungspunkt der Seile an der Masse stehen grundsätzlich 2 Gleichungen zur Verfügung
+(zentrales Kräftesystem). Im Fall a) liefern die 2 Bedingungen auch die 2 unbekannten
+Seilkräfte, die Lagerung ist statisch bestimmt.
+Im Fall b) müssen mit nur einer Gleichung - Summe der Kräfte in vertikaler Richtung - die
+beiden Seilkräfte ermittelt werden und im Fall c) stehen 2 Gleichungen 3 unbekannten
+Seilkräften gegenüber. Beide Systeme sind statisch unbestimmt.
+
+\begin{figure}[H]    
+    \centering          %     left botm right top
+    \includegraphics[clip, trim=0cm 0cm 0cm 0cm,width=.8\textwidth]{statisch_unbestimmt_1.png} %.6 stands for 0.6 x textwidth
+    \caption{Statisch bestimmte und statisch unbestimmte Aufhängung \cite{bartsch_mechanik_2022}}
+    \label{fig:statisch_unbestimmt_1}
+\end{figure}
+
+Analog verhält es sich bei Trägern, die 3-fach abgestützt sind. Die Lagerreaktionen können in
+diesem Fall nicht aus den Gleichgewichtsbedingungen allein berechnet werden, man benötigt
+dazu zusätzliche Aussagen über die Deformation bzw. die Biegesteifigkeit des Bauteils.
+Die in der Statik übliche Vereinfachung der starren Körper muss also aufgegeben werden.
+Die Berechnung von statisch unbestimmt gelagerten Bauteilen ist deshalb ein Thema der
+Mechanik der deformierbaren Körper und deshalb der Festigkeitslehre.
+
+\begin{figure}[H]    
+    \centering          %     left botm right top
+    \includegraphics[clip, trim=0cm 0cm 0cm 0cm,width=.8\textwidth]{statisch_unbestimmt_2.png} %.6 stands for 0.6 x textwidth
+    \caption{tatisch bestimmt und statisch unbestimmt gelagerte Träger \cite{bartsch_mechanik_2022}}
+    \label{fig:statisch_unbestimmt_2}
+\end{figure}
+
+\subsection{Zusammenfassung}
+
+Die Lagerreaktionen für beliebige, statisch bestimmt gelagerte, ebene Bauteile können immer
+mit Hilfe der Gleichgewichtsbedingungen berechnet werden.
+
+Für das Vorgehen wird folgender Weg empfohlen \cite{bartsch_mechanik_2022}:
+
+\begin{figure}[H]    
+    \centering          %     left botm right top
+    \includegraphics[clip, trim=0cm 0cm 0cm 0cm,width=.4\textwidth]{zusammenfassung_allgemeines_kräftesystem.png} %.6 stands for 0.6 x textwidth
+    \label{fig:vorgehen_allgemeines_kräftesystem}
+\end{figure}
